@@ -36,8 +36,8 @@ export class AppComponent {
           }
         }),
         catchError((err: any) => {
-          this.progress = null;
-          alert(err.message);
+          this.progress = 100;
+          //alert(err.message);
           return throwError(err.message);
         })
       )

@@ -1,5 +1,6 @@
 <h2>File Upload With Progress Bar</h2>
+
 <input type="file" (change)="upload($event)" />
-<div class="progress" *ngIf="progress">
+<div *ngIf="progress">
   <div class="progress-bar" [style.width]="progress + '%'">{{ progress }}%</div>
 </div>
